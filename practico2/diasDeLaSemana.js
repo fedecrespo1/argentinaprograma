@@ -1,27 +1,29 @@
 const readlineSync = require('readline-sync');
 const num = readlineSync.question('Ingresa un numero del 1 al 7: ');
+let dia
 switch (num) {
     case '1':
-        console.log('Hoy es lunes')
+       dia='lunes'
     break;
     case '2':
-        console.log('Hoy es martes')
+        dia=' martes'
         break;
     case '3':
-        console.log('Hoy es miercoles')
+        dia='miercoles'
     break;
     case '4':
-        console.log('Hoy es jueves')
+        dia='jueves'
     break;
     case '5':
-        console.log('Hoy es viernes')
+        dia='viernes'
     break;
     case '6':
-        console.log('Hoy es sabado')
+        dia='sabado'
     break;
     case '7':
-        console.log('Hoy es domingo')
+        dia='domingo'
     break;
     default:
         console.log('Numero invalido')
-        }
+                }
+    console.log('Hoy es',dia);
